@@ -24,7 +24,7 @@ class webActions:
         self.driver.get(URL)
 
     def getTitle(self):
-        self.driver.title
+        return self.driver.title
 
     def addTask(self, task):
         self.driver.find_element(By.CLASS_NAME, locate.addTodo).send_keys(task, Keys.ENTER)

@@ -7,12 +7,12 @@ from dotenv import load_dotenv
 import os
 load_dotenv('.env')
 
-username = os.getenv("gridusername")
+username = os.getenv("grid_username")
 access_key = os.getenv("access_key")
 
 desired_caps = {
 		'LT:Options' : {
-			"user" : os.getenv("gridusername"),
+			"user" : os.getenv("grid_username"),
 			"accessKey" : os.getenv("access_key"),
 			"build" : "FireTest New",
 			"name" : "FireBrowser",
@@ -34,5 +34,5 @@ class testSet:
         self.driver.maximize_window()
     def tearDown(self):
         if (self.driver != None):
-            print("Cleanup of test environment")
+            print("Cleaning the test environment")
             self.driver.quit()

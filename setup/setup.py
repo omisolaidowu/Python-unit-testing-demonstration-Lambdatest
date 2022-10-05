@@ -1,7 +1,4 @@
-import unittest
 from selenium import webdriver
-from selenium.webdriver.support import expected_conditions as EC
-from selenium.webdriver.support.ui import WebDriverWait
 
 from dotenv import load_dotenv
 import os
@@ -22,10 +19,9 @@ desired_caps = {
 		"browserVersion" : "103.0",
 	}
 gridURL = "https://{}:{}@hub.lambdatest.com/wd/hub".format(username, access_key)
-class testSet: 
 
-    
-    # Generate capabilites from here: https://www.lambdatest.com/capabilities-generator/        
+class testSet: 
+       
     def __init__(self) -> None:
         self.driver = webdriver.Remote(command_executor=gridURL, desired_capabilities= desired_caps)
         

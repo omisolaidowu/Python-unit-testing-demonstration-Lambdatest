@@ -13,6 +13,7 @@ form = formWebAction(set_up.driver)
 class TodoSampleTest(unittest.TestCase):
     def test_unit_user_should_able_to_add_item(self):
         try:
+            set_up.testSetup()
             form.getWeb("https://www.lambdatest.com/selenium-playground/input-form-demo")
             title = form.getTitle()
             self.assertIn("Seleniu", title, "Seleniu is not in title")

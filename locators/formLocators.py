@@ -1,6 +1,6 @@
 from selenium.webdriver.common.by import By
 
-class formLoator:
+class formLocator:
     name = "//input[@id='name']"
     email = "//input[@id='inputEmail4']"
     password = "//input[@id='inputPassword4']"
@@ -14,7 +14,7 @@ class formLoator:
     zip_code = "inputZip"
     button = "btn"
 
-locateForm = formLoator()
+locateForm = formLocator()
 
 
 class formWebAction:

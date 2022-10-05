@@ -12,6 +12,7 @@ todo = todoWebActions(set_up.driver)
 class TodoSampleTest(unittest.TestCase):
     def test_unit_user_should_able_to_add_item(self):
         try:
+            set_up.testSetup()
             todo.getWeb("https://todomvc.com/examples/react/#/")
             title = todo.getTitle()
             self.assertIn("Todo", title, "Todo is not in title")

@@ -17,5 +17,5 @@ Cd into the testsuites folder:
 
 ### To Run the Todo Test
 `python test_todo.py`
-### To Run Demo Form Test
+### To Run the Demo Form Test
 `python test_demo_form.py`

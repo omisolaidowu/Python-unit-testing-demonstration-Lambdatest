@@ -13,9 +13,9 @@ Python_unit_test
 ## Run the Test
 Cd into the testsuites folder:
 
-"`cd testsuites`"
+`cd testsuites`
 
 ### To Run the Todo Test
-"`python test_todo.py`"
+`python test_todo.py`
 ### To Run Demo Form Test
-"`python test_demo_form.py
+`python test_demo_form.py`

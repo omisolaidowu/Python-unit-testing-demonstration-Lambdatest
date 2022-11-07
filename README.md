@@ -10,3 +10,12 @@ Python_unit_test
    ├─ test_demo_form.py
    └─ test_todo.py
 ```
+## Run the Test
+Cd into the testsuites folder:
+
+"`cd testsuites`"
+
+### To Run the Todo Test
+"`python test_todo.py`"
+### To Run Demo Form Test
+"`python test_demo_form.py
